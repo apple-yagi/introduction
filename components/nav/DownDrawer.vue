@@ -5,7 +5,7 @@
     </v-btn>
     <v-navigation-drawer v-model="drawer" :height="drawerHeight" fixed bottom temporary>
       <v-list dense>
-        <v-list-item v-for="(item, i) in items" :key="i" :to="item.link">
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.link" nuxt>
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -30,8 +30,25 @@ export default Vue.extend({
 
   data: () => ({
     drawer: false,
-    btnColor: '#26A69A'
+    btnColor: '#26A69A',
+    width: 0
   }),
+
+  methods: {
+    handleResize() {
+      this.width = window.innerWidth
+      this.$emit('switchNavi', this.width > 1024 ? true : false)
+    }
+  },
+
+  mounted() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize)
+  },
 
   computed: {
     drawerHeight(): number {
