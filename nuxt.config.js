@@ -27,7 +27,7 @@ module.exports = {
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
-      href: '/favicon.ico'
+      href: '/introduction/favicon.ico'
     }]
   },
   /*
@@ -91,5 +91,9 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  // GitHub Pages
+  router: {
+    base: '/introduction/'
   }
 }
