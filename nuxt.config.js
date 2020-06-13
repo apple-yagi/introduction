@@ -92,8 +92,4 @@ module.exports = {
      */
     extend(config, ctx) {}
   },
-  // GitHub Pages
-  router: {
-    base: '/introduction/'
-  }
 }
