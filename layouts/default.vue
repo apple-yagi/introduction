@@ -1,7 +1,10 @@
 <template>
   <v-app>
-    <drawer @switchNavi="switchNavi" :items="items" />
-    <down-drawer v-if="!navi" :items="items" />
+    <client-only placeholder="Loading...">
+      <!-- <drawer @switchNavi="switchNavi" :items="items" /> -->
+      <Header v-if="navi" @switchNavi="switchNavi" :items="items" />
+      <down-drawer v-else @switchNavi="switchNavi" :items="items" />
+    </client-only>
     <v-main>
       <nuxt />
     </v-main>
@@ -12,16 +15,21 @@
 import Vue from 'vue'
 import Drawer from '@/components/nav/Drawer.vue'
 import DownDrawer from '@/components/nav/DownDrawer.vue'
+import Header from '@/components/nav/Header.vue'
 
 export default Vue.extend({
   components: {
     Drawer,
-    DownDrawer
+    DownDrawer,
+    Header
   },
 
   data: () => ({
     navi: true,
-    items: [{ title: 'Home', icon: 'mdi-home', link: '/' }]
+    items: [
+      { title: 'Home', icon: 'mdi-home', link: '/' },
+      { title: 'Skill', icon: 'mdi-code-tags', link: '/skill' }
+    ]
   }),
 
   methods: {
