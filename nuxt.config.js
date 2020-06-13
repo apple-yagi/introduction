@@ -27,7 +27,7 @@ module.exports = {
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
-      href: '/introduction/favicon.ico'
+      href: '/favicon.ico'
     }]
   },
   /*
@@ -43,7 +43,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{
+    src: '~/plugins/vue-typer.js',
+    ssr: false
+  }, ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -91,5 +94,5 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  },
+  }
 }
