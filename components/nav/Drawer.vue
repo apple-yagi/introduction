@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer v-model="navi" app fixed absolute>
+  <v-navigation-drawer v-model="navi" width="180px" app fixed absolute>
     <v-list dense nav>
       <v-list-item-avatar>
         <v-icon>mdi-home</v-icon>
@@ -33,8 +33,12 @@ export default Vue.extend({
   },
 
   data: () => ({
-    navi: true
+    navi: false
   }),
+
+  mounted() {
+    this.navi = window.innerWidth > 1024 ? true : false
+  },
 
   watch: {
     navi(val: boolean) {
