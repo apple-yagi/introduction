@@ -6,7 +6,7 @@
           <span class="body-1" style="background-color: #555;">profile.yml</span>
           <v-container>
             <client-only>
-              <div v-for="(code, i) in codes" :key="i">
+              <div v-for="(code, i) in codes" class="my-1" :key="i">
                 <vue-typer :text="code.text" :repeat="0" :pre-type-delay="code.delay"></vue-typer>
               </div>
             </client-only>
@@ -30,8 +30,8 @@ export default Vue.extend({
       { text: '  -  4th year University Student', delay: 7800 },
       { text: 'live :', delay: 10300 },
       { text: '  -  Fukuoka', delay: 11100 },
-      { text: 'favorite lang :', delay: 12000 },
-      { text: '  -  JavaScript, Node.js', delay: 13000 }
+      { text: 'favorite lang :', delay: 12200 },
+      { text: '  -  JavaScript, Node.js', delay: 13500 }
     ]
   })
 })
