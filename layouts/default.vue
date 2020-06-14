@@ -8,6 +8,7 @@
     <v-main>
       <nuxt />
     </v-main>
+    <Footer />
   </v-app>
 </template>
 
@@ -16,12 +17,14 @@ import Vue from 'vue'
 import Drawer from '@/components/nav/Drawer.vue'
 import DownDrawer from '@/components/nav/DownDrawer.vue'
 import Header from '@/components/nav/Header.vue'
+import Footer from '@/components/nav/Footer.vue'
 
 export default Vue.extend({
   components: {
     Drawer,
     DownDrawer,
-    Header
+    Header,
+    Footer
   },
 
   data: () => ({

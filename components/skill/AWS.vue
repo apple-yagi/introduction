@@ -1,22 +1,21 @@
 <template>
   <v-card style="background-color: #424242;">
-    <v-row class="reverse">
-      <v-col align="center" cols="12" sm="4">
-        <v-img class="aws" src="img/aws.jpeg" alt="aws" width="125" />
-      </v-col>
-
-      <v-col align="center" cols="12" sm="8">
-        <v-card-subtitle class="title">Amazon Web Service</v-card-subtitle>
-        <v-card-text>
-          <span class="mx-10" v-for="(service, i) in aws" :key="i">
-            <div class="my-3" style="display: inline-block;">
-              <img :src="img(service)" width="30" alt="aws-img" style="vertical-align: middle;" />
-              <span class="aws-name ml-2" style="vertical-align: middle;">{{ service }}</span>
-            </div>
-          </span>
-        </v-card-text>
-      </v-col>
-    </v-row>
+    <v-card-subtitle class="title">Amazon Web Service</v-card-subtitle>
+    <v-card-text align="center">
+      <span class="mx-10" v-for="(service, i) in aws" :key="i">
+        <div class="my-3" style="display: inline-block;">
+          <img
+            :src="img(service)"
+            width="30"
+            alt="aws-img"
+            style="vertical-align: middle;"
+          />
+          <span class="aws-name ml-2" style="vertical-align: middle;">{{
+            service
+          }}</span>
+        </div>
+      </span>
+    </v-card-text>
   </v-card>
 </template>
 

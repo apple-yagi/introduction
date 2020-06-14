@@ -1,23 +1,22 @@
 <template>
   <v-card style="background-color: #424242;">
-    <v-row>
-      <v-col align="center" cols="12" sm="8">
-        <v-card-subtitle class="title">Programming Language</v-card-subtitle>
-        <v-card-text>
-          <span class="mx-10" v-for="(lang, i) in langList" :key="i">
-            <div class="my-3" style="display: inline-block;">
-              <img :src="img(lang.name)" width="30" alt="lang-img" style="vertical-align: middle;" />
-              <span class="lang-name ml-2" style="vertical-align: middle;">{{ lang.name }}</span>
-              <div class="subtitle mt-2">学習期間：{{ lang.experience }}</div>
-            </div>
-          </span>
-        </v-card-text>
-      </v-col>
-
-      <v-col align="center" cols="12" sm="4">
-        <v-img class="gear" src="img/gear.png" alt="gear" width="100" />
-      </v-col>
-    </v-row>
+    <v-card-subtitle class="title">Programming Language</v-card-subtitle>
+    <v-card-text>
+      <span class="mx-10" v-for="(lang, i) in langList" :key="i">
+        <div class="my-3" style="display: inline-block;">
+          <img
+            :src="img(lang.name)"
+            width="30"
+            alt="lang-img"
+            style="vertical-align: middle;"
+          />
+          <span class="lang-name ml-2" style="vertical-align: middle;">{{
+            lang.name
+          }}</span>
+          <div class="subtitle mt-2">学習期間：{{ lang.experience }}</div>
+        </div>
+      </span>
+    </v-card-text>
   </v-card>
 </template>
 
@@ -66,15 +65,9 @@ export default Vue.extend({
   animation: 10s infinite alternate forwards running rotation;
 }
 
-@media screen and (min-width: 600px) {
-  .gear {
-    margin-top: 100px;
-  }
-}
-
 @media screen and (min-width: 1264px) {
   .gear {
-    margin-top: 75px;
+    margin-top: 150px;
   }
 }
 

@@ -1,11 +1,33 @@
 <template>
   <v-container>
     <h1 class="mt-5" align="center">Skills</h1>
-    <pro-lang />
-    <framework class="mt-10" />
-    <database class="mt-10" />
-    <AWS class="mt-10" />
-    <other class="my-10" />
+    <v-row>
+      <v-layout justify-center>
+        <v-col align="center" cols="12" sm="10" lg="8">
+          <pro-lang />
+        </v-col>
+      </v-layout>
+      <v-layout justify-center>
+        <v-col align="center" cols="12" sm="10" lg="8">
+          <framework class="mt-10" />
+        </v-col>
+      </v-layout>
+      <v-layout justify-center>
+        <v-col align="center" cols="12" sm="10" lg="8">
+          <database class="mt-10" />
+        </v-col>
+      </v-layout>
+      <v-layout justify-center>
+        <v-col align="center" cols="12" sm="10" lg="8">
+          <AWS class="mt-10" />
+        </v-col>
+      </v-layout>
+      <v-layout justify-center>
+        <v-col align="center" cols="12" sm="10" lg="8">
+          <other class="my-10" />
+        </v-col>
+      </v-layout>
+    </v-row>
   </v-container>
 </template>
 

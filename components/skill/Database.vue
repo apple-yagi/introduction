@@ -1,22 +1,21 @@
 <template>
   <v-card style="background-color: #424242;">
-    <v-row>
-      <v-col align="center" cols="12" sm="8">
-        <v-card-subtitle class="title">Database</v-card-subtitle>
-        <v-card-text>
-          <span class="mx-10" v-for="(db, i) in dbList" :key="i">
-            <div class="my-3" style="display: inline-block;">
-              <img :src="img(db.name)" width="30" alt="lang-img" style="vertical-align: middle;" />
-              <span class="db-name ml-2" style="vertical-align: middle;">{{ db.name }}</span>
-            </div>
-          </span>
-        </v-card-text>
-      </v-col>
-
-      <v-col align="center" cols="12" sm="4">
-        <v-img class="db" src="img/database.png" alt="database" width="100" />
-      </v-col>
-    </v-row>
+    <v-card-subtitle class="title">Database</v-card-subtitle>
+    <v-card-text align="center">
+      <span class="mx-10" v-for="(db, i) in dbList" :key="i">
+        <div class="my-3" style="display: inline-block;">
+          <img
+            :src="img(db.name)"
+            width="30"
+            alt="lang-img"
+            style="vertical-align: middle;"
+          />
+          <span class="db-name ml-2" style="vertical-align: middle;">{{
+            db.name
+          }}</span>
+        </div>
+      </span>
+    </v-card-text>
   </v-card>
 </template>
 
