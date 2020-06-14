@@ -33,7 +33,8 @@ export default Vue.extend({
       { name: 'Python', experience: '3ヶ月' },
       { name: 'Ruby', experience: '1ヶ月' },
       { name: 'JavaScript', experience: '6ヶ月' },
-      { name: 'Node.js', experience: '3ヶ月' }
+      { name: 'Node.js', experience: '3ヶ月' },
+      { name: 'TypeScript', experience: '1ヶ月' }
     ]
   }),
 

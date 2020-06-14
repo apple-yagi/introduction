@@ -5,6 +5,7 @@
     <framework class="mt-10" />
     <database class="mt-10" />
     <AWS class="mt-10" />
+    <other class="my-10" />
   </v-container>
 </template>
 
@@ -14,13 +15,15 @@ import ProLang from '@/components/skill/ProLang.vue'
 import Framework from '@/components/skill/FrameWork.vue'
 import Database from '@/components/skill/Database.vue'
 import AWS from '@/components/skill/AWS.vue'
+import Other from '@/components/skill/Other.vue'
 
 export default Vue.extend({
   components: {
     ProLang,
     Framework,
     Database,
-    AWS
+    AWS,
+    Other
   }
 })
 </script>

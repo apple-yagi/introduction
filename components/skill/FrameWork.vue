@@ -33,11 +33,11 @@ const img_url = 'https://cdn.svgporn.com/logos/'
 export default Vue.extend({
   data: () => ({
     frameworks: [
-      { name: 'Ruby on Rails', experience: '1年' },
+      { name: 'Ruby on Rails', experience: '2ヶ月' },
       { name: 'Django', experience: '1ヶ月' },
       { name: 'Vue', experience: '6ヶ月' },
       { name: 'Nuxt', experience: '2ヶ月' },
-      { name: 'Express', experience: '3ヶ月' }
+      { name: 'Express', experience: '2ヶ月' }
     ]
   }),
 
