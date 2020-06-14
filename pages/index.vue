@@ -2,7 +2,7 @@
   <v-container fill-height>
     <v-container>
       <index-title />
-      <yml-file />
+      <yml-file v-show="show" />
     </v-container>
   </v-container>
 </template>
@@ -18,6 +18,16 @@ export default Vue.extend({
   components: {
     IndexTitle,
     YmlFile
+  },
+
+  data: () => ({
+    show: false
+  }),
+
+  mounted() {
+    setTimeout(() => {
+      this.show = true
+    }, 5800)
   }
 })
 </script>

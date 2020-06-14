@@ -25,13 +25,13 @@ export default Vue.extend({
 
   data: () => ({
     codes: [
-      { text: 'version : ' + new Date().getFullYear(), delay: 5800 },
-      { text: 'jobs :', delay: 7000 },
-      { text: '  -  4th year University Student', delay: 7800 },
-      { text: 'live :', delay: 10300 },
-      { text: '  -  Fukuoka', delay: 11100 },
-      { text: 'favorite lang :', delay: 12200 },
-      { text: '  -  JavaScript, Node.js', delay: 13500 }
+      { text: 'version : ' + new Date().getFullYear(), delay: 6300 },
+      { text: 'jobs :', delay: 7500 },
+      { text: '  -  4th year University Student', delay: 8300 },
+      { text: 'live :', delay: 10800 },
+      { text: '  -  Fukuoka', delay: 11600 },
+      { text: 'favorite lang :', delay: 12700 },
+      { text: '  -  JavaScript, Node.js', delay: 14000 }
     ]
   })
 })
