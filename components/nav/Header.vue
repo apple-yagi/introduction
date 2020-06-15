@@ -29,26 +29,6 @@ export default Vue.extend({
       type: Array,
       required: true
     }
-  },
-
-  data: () => ({
-    width: 0
-  }),
-
-  methods: {
-    handleResize() {
-      this.width = window.innerWidth
-      this.$emit('switchNavi', this.width > 1024 ? true : false)
-    }
-  },
-
-  mounted() {
-    window.addEventListener('resize', this.handleResize)
-    this.handleResize()
-  },
-
-  beforeDestroy() {
-    window.removeEventListener('resize', this.handleResize)
   }
 })
 </script>
