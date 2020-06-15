@@ -28,7 +28,7 @@ module.exports = {
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
-    }]
+    }],
   },
   /*
    ** Customize the progress-bar color
@@ -44,9 +44,14 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [{
-    src: '~/plugins/vue-typer.js',
-    ssr: false
-  }, ],
+      src: '~/plugins/vue-typer.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/ga.js',
+      mode: 'client'
+    }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
