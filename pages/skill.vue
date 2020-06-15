@@ -3,27 +3,27 @@
     <h1 class="mt-5" align="center">Skills</h1>
     <v-row>
       <v-layout justify-center>
-        <v-col align="center" cols="12" sm="10" lg="8">
+        <v-col align="center" cols="12" sm="10">
           <pro-lang />
         </v-col>
       </v-layout>
       <v-layout justify-center>
-        <v-col align="center" cols="12" sm="10" lg="8">
+        <v-col align="center" cols="12" sm="10">
           <framework class="mt-10" />
         </v-col>
       </v-layout>
       <v-layout justify-center>
-        <v-col align="center" cols="12" sm="10" lg="8">
+        <v-col align="center" cols="12" sm="10">
           <database class="mt-10" />
         </v-col>
       </v-layout>
       <v-layout justify-center>
-        <v-col align="center" cols="12" sm="10" lg="8">
+        <v-col align="center" cols="12" sm="10">
           <AWS class="mt-10" />
         </v-col>
       </v-layout>
       <v-layout justify-center>
-        <v-col align="center" cols="12" sm="10" lg="8">
+        <v-col align="center" cols="12" sm="10">
           <other class="my-10" />
         </v-col>
       </v-layout>

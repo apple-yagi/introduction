@@ -50,12 +50,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-@media screen and (max-width: 600px) {
-  .reverse {
-    flex-flow: column-reverse;
-  }
-}
-
 .fw-name {
   font-size: 16px;
   color: #b0bec5;
@@ -64,32 +58,6 @@ export default Vue.extend({
 @media screen and (min-width: 630px) {
   .fw-name {
     font-size: 20px;
-  }
-}
-
-.fullscreen {
-  animation: 10s infinite alternate forwards running scale;
-}
-
-@media screen and (min-width: 600px) {
-  .fullscreen {
-    margin-top: 100px;
-  }
-}
-
-@media screen and (min-width: 1264px) {
-  .fullscreen {
-    margin-top: 75px;
-  }
-}
-
-@keyframes scale {
-  from {
-    width: 50px;
-  }
-
-  to {
-    width: 150px;
   }
 }
 </style>

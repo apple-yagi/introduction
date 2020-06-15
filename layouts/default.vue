@@ -2,8 +2,8 @@
   <v-app>
     <client-only placeholder="Loading...">
       <!-- <drawer @switchNavi="switchNavi" :items="items" /> -->
-      <Header v-if="navi" @switchNavi="switchNavi" :items="items" />
-      <down-drawer v-else @switchNavi="switchNavi" :items="items" />
+      <Header @switchNavi="switchNavi" :items="items" />
+      <!-- <down-drawer v-else @switchNavi="switchNavi" :items="items" /> -->
     </client-only>
     <v-main>
       <nuxt />

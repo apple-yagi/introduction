@@ -1,7 +1,7 @@
 <template>
   <v-card style="background-color: #424242;">
     <v-card-subtitle class="title">Database</v-card-subtitle>
-    <v-card-text align="center">
+    <v-card-text>
       <span class="mx-10" v-for="(db, i) in dbList" :key="i">
         <div class="my-3" style="display: inline-block;">
           <img

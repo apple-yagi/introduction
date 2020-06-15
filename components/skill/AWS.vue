@@ -1,7 +1,7 @@
 <template>
   <v-card style="background-color: #424242;">
     <v-card-subtitle class="title">Amazon Web Service</v-card-subtitle>
-    <v-card-text align="center">
+    <v-card-text>
       <span class="mx-10" v-for="(service, i) in aws" :key="i">
         <div class="my-3" style="display: inline-block;">
           <img
@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-const img_url = 'img/aws/'
+const img_url = '/img/aws/'
 
 export default Vue.extend({
   data: () => ({
@@ -30,9 +30,9 @@ export default Vue.extend({
 
   computed: {
     img: function() {
-      return function(lang: String) {
-        lang = lang.toLowerCase().replace('.', '')
-        return img_url + lang + '.png'
+      return function(service: String) {
+        service = service.toLowerCase()
+        return img_url + service + '.png'
       }
     }
   }
